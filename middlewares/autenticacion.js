@@ -14,6 +14,7 @@ exports.verificaToken = function(req, res, next) {
             })
         }
         req.usuario = decoded.usuario
+        console.log(decoded.usuario)
         next();
         /* return res.status(200).json({
             ok: true,
